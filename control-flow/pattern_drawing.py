@@ -1,12 +1,15 @@
+# Define a variable that prompt user to enter a size
 size = int(input("Enter the size of the pattern: "))
 
-i = 0
+# Initialize a row counter
+row = 0
 
-while i < size:
-    i += 1
-
-    j = 0
-    for j in range(size):
-        j += 1
-        print("*" ,end="")
+# Use a while loop to iterate through each row
+while row < size:
+    # Use a for loop to print asterisks side by side for each column in the row
+    for col in range(size):
+        print("*", end="")
+    # Print a newline character after completing each row
     print()
+    # Increment the row counter
+    row += 1
